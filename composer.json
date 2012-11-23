@@ -1,0 +1,21 @@
+{
+    "name": "tyaga/common-game.loc",
+    "authors": [
+        {
+            "name": "Alexey Tyagunov",
+            "email": "atyaga@gmail.com"
+        }
+    ],
+	"require": {
+		"silex/silex": "1.0.*",
+		"twig/twig": "dev-master",
+		"symfony/class-loader": "2.1.*",
+		"doctrine/dbal": "2.2.*",
+		"doctrine/common": "2.3.0",
+		"raveren/kint": "dev-master"
+	},
+	"minimum-stability": "dev",
+	"autoload": {
+		"psr-0": { "": "lib/" }
+	}
+}

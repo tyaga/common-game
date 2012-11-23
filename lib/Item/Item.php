@@ -1,0 +1,6 @@
+<?
+namespace Item;
+
+class Item {
+
+}

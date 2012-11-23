@@ -1,0 +1,6 @@
+<?
+namespace User;
+
+class User {
+
+}

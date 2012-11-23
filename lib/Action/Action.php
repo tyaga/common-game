@@ -1,0 +1,6 @@
+<?
+namespace Action;
+
+class Action {
+
+}
