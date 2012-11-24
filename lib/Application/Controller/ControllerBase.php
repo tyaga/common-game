@@ -15,11 +15,11 @@ class ControllerBase {
 		$comment = (new \ReflectionMethod(get_class($this), $method))->getDocComment();
 		if (!$comment) return;
 
-		$comment_arr = array_map(function($s){
+		$comment_arr = array_map(function($s) {
 			return trim(str_replace(["/**", "*/", "*"], "", $s));
 		}, explode("\n", $comment));
 
-		$comment_arr = array_filter($comment_arr);
+		$comment_arr = array_filter($comment_arr, function($it){ return strpos($it, ":") !== false; });
 
 		foreach ($comment_arr as $comment) {
 			list($type, $data) = explode(':', $comment);

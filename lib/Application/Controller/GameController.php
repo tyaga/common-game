@@ -7,6 +7,7 @@ class GameController extends ControllerBase {
 	/**
 	 * @return bool
 	 *
+	 * queue: user|conf
 	 * queue: user|bag
 	 */
 	public function executeInit() {

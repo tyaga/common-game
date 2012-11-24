@@ -1,7 +1,8 @@
 <?
 
 $config = [
-	'debug' => true
+	'debug' => true,
+	'db.options' => []
 ];
 
 return $config;

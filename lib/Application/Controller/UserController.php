@@ -7,4 +7,8 @@ class UserController extends ControllerBase{
 		return true;
 	}
 
+	public function executeConf() {
+		return true;
+	}
+
 }

@@ -39,7 +39,7 @@ class Application extends \Silex\Application {
 		switch($app['request']->get('format')) {
 			case "debug":
 				if (!$app['debug']) return '';
-				kintLite($result);
+				s($result);
 				return '';
 
 			case 'json':
